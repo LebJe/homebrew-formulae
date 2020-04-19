@@ -2,7 +2,7 @@ class LfsPointers < Formula
 	desc "A tool that allows you to convert a directory of large files to Git LFS pointers."
 	homepage "https://github.com/LebJe/LFSPointers"
 	url "https://github.com/LebJe/LFSPointers.git",
-		:tag => "0.5.0"
+		:tag => "0.6.0"
 	head "https://github.com/LebJe/LFSPointers.git"
   
 	depends_on :xcode => ["11.4", :build]
