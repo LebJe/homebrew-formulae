@@ -5,7 +5,7 @@ class LfsPointers < Formula
 		:tag => "0.12.3"
 	head "https://github.com/LebJe/LFSPointers.git"
   
-	depends_on :xcode => ["11.4", :build]
+	depends_on :xcode
   
 	def install
 		system "swift build --configuration release --disable-sandbox"
