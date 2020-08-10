@@ -4,11 +4,28 @@ class LfsPointers < Formula
 	url "https://github.com/LebJe/LFSPointers.git",
 		:tag => "0.12.7"
 	head "https://github.com/LebJe/LFSPointers.git"
+
+	license "MIT"
   
 	def install
 		system "swift build --configuration release --disable-sandbox"
 		system "mv", ".build/release/LFSPointers", "LFSPointers"
 		bin.install "LFSPointers"
+
+		# Completion Scripts.
+
+		zshC = %x[#{bin}/LFSPointers --generate-completion-script zsh]
+
+		# ZSH.
+		File.write("_LFSPointers", zshC)
+		zsh_completion.install "_LFSPointers"
+
+		# Bash.
+
+		bashC = %x[#{bin}/LFSPointers --generate-completion-script bash]
+
+		File.write("LFSPointers.bash", bashC)
+		bash_completion.install "LFSPointers.bash"
 	end
   
 	test do
