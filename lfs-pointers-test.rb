@@ -14,7 +14,7 @@ class LfsPointersTest < Formula
 		# Completion Scripts.
 
 		# ZSH.
-		system "LFSPointers" "--generate-completion-script" "zsh" ">" "_LFSPointers"
+		system "LFSPointers", "--generate-completion-script", "zsh", ">", "_LFSPointers"
 		zsh_completion.install "_zsh"
 
 		# Bash.
