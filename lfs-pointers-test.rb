@@ -18,14 +18,14 @@ class LfsPointersTest < Formula
 		zshC = `LFSPointers --generate-completion-script zsh`
 
 		# ZSH.
-		File.write("_LFSPointers", zshC))
+		File.write("_LFSPointers", zshC)
 		zsh_completion.install "_LFSPointers"
 
 		# Bash.
 
 		bashC = `LFSPointers --generate-completion-script bash`
 
-		File.write("LFSPointers.bash", bashC))
+		File.write("LFSPointers.bash", bashC)
 		bash_completion.install "LFSPointers.bash"
 	end
   
