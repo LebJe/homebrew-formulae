@@ -8,7 +8,7 @@ class LfsPointers < Formula
 	license "MIT"
   
 	def install
-		system "swift build --configuration release --disable-sandbox"
+		system "swift", "build", "--configuration", "release", "--disable-sandbox"
 		system "mv", ".build/release/LFSPointers", "LFSPointers"
 		bin.install "LFSPointers"
 
