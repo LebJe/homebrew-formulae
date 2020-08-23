@@ -3,7 +3,7 @@ class LfsPointersTest < Formula
 	homepage "https://lebje.github.io/LFSPointers"
 	url "https://github.com/LebJe/LFSPointers/releases/download/0.12.8/lfspointers-macos-x86_64.tar.gz"
 	head "https://github.com/LebJe/LFSPointers.git"
-
+    sha256 "5fdfe6a226a37490970b3c09f6069394e42789f6158451ef218c4d163592eda5"
 	license "MIT"
   
 	def install
