@@ -19,6 +19,11 @@ class LfsPointers < Formula
 		bashC = %x[#{bin}/LFSPointers --generate-completion-script bash]
 		File.write("LFSPointers.bash", bashC)
 		bash_completion.install "LFSPointers.bash"
+
+		# Fish.
+		fishC = %x[#{bin}/LFSPointers --generate-completion-script fish]
+        File.write("LFSPointers.fish", fishC)
+		fish_completion.install "LFSPointers.fish"
 	end
   
 	test do
