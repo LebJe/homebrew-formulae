@@ -1,9 +1,9 @@
 class LfsPointers < Formula
 	desc "A tool that allows you to convert a directory of large files to Git LFS pointers."
 	homepage "https://lebje.github.io/LFSPointers"
-	url "https://github.com/LebJe/LFSPointers/releases/download/0.12.8/lfspointers-macos-x86_64.tar.gz"
+    url "https://github.com/LebJe/LFSPointers/releases/download/1.0.0/lfspointers-macos-x86_64.tar.gz"
 	head "https://github.com/LebJe/LFSPointers.git"
-    sha256 "5fdfe6a226a37490970b3c09f6069394e42789f6158451ef218c4d163592eda5"
+    sha256 "0793ce7ef26c0a9c577edf40d9da3d86a418aa5b6308e4692112a39f2d0a7304"
 	license "MIT"
   
 	def install
