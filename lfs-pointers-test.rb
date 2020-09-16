@@ -7,6 +7,12 @@ class LfsPointersTest < Formula
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git"
 
+  bottle do
+    root_url "https://dl.bintray.com/lebje/bottles-formulae"
+    cellar :any_skip_relocation
+    sha256 "c894b4cdef075ede0c28b17956183813a20bbabeb2ffb188d49713dffb729051" => :big_sur
+  end
+
   def install
     system "./build.sh"
 
