@@ -1,3 +1,0 @@
-Error: 2 failed steps!
-brew doctor
-brew style lebje/formulae
