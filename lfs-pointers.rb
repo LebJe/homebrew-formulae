@@ -10,7 +10,8 @@ class LfsPointers < Formula
   bottle do
     root_url "https://dl.bintray.com/lebje/bottles-formulae"
     cellar :any_skip_relocation
-    sha256 "c894b4cdef075ede0c28b17956183813a20bbabeb2ffb188d49713dffb729051" => :big_sur
+    rebuild 1
+    sha256 "2ce63134d89af43473e52d59dbcaf4c4f9112db662cf6e6c1277761e97885e80" => :big_sur
   end
 
   def install
