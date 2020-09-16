@@ -6,7 +6,6 @@ class LfsPointersTest < Formula
   sha256 "0793ce7ef26c0a9c577edf40d9da3d86a418aa5b6308e4692112a39f2d0a7304"
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git"
-  depends_on xcode: :build
 
   def install
     system "./build.sh"
