@@ -1,7 +1,7 @@
 class LfsPointersTest < Formula
 	desc "A tool that allows you to convert a directory of large files to Git LFS pointers."
 	homepage "https://lebje.github.io/LFSPointers"
-	url "https://github.com/LebJe/LFSPointers.gitt",
+	url "https://github.com/LebJe/LFSPointers.git",
 		:tag => "1.0.2"
 	head "https://github.com/LebJe/LFSPointers.git"
 	sha256 "0793ce7ef26c0a9c577edf40d9da3d86a418aa5b6308e4692112a39f2d0a7304"
