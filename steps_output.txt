@@ -1,0 +1,4 @@
+Error: 3 failed steps!
+brew doctor
+brew style lebje/formulae
+brew install --verbose --build-bottle lebje/formulae/lfs-pointers

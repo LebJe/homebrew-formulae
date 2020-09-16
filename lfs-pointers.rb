@@ -20,8 +20,6 @@ class LfsPointers < Formula
 
     bin.install "LFSPointers"
 
-    bin.install "LFSPointers"
-
     # Completion Scripts.
     # ZSH.
     zshc = `#{bin}/LFSPointers --generate-completion-script zsh`
