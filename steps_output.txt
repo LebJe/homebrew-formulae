@@ -1,4 +1,0 @@
-Error: 3 failed steps!
-brew doctor
-brew style lebje/formulae
-brew bottle --merge --write --no-commit ./lfs-pointers-test--1.0.2.big_sur.bottle.json
