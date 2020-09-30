@@ -7,37 +7,37 @@ class LfsPointersTest < Formula
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git"
 
-  # bottle do
-  # 	root_url "https://github.com/LebJe/LFSPointers/releases/download/2.1.0"
-  # 	cellar :any_skip_relocation
-  # 	sha256 "2ce63134d89af43473e52d59dbcaf4c4f9112db662cf6e6c1277761e97885e80" => :big_sur
-  # end
+  bottle do
+    root_url "https://github.com/LebJe/LFSPointersTestHomebrewBottle/releases/download/1.0.7"
+    cellar :any_skip_relocation
+    sha256 "433804c641d3ada9d30e3701ae78f804c3095e404ef95138762ab1a8ac2fa7f2" => :big_sur
+  end
 
   def install
-  	system "./build.sh"
+    system "./build.sh"
 
-  	system "mv .build/release/LFSPointers ."
+    system "mv .build/release/LFSPointers ."
 
-  	bin.install "LFSPointers"
+    bin.install "LFSPointers"
 
-  	# Completion Scripts.
-  	# ZSH.
-  	zshc = `#{bin}/LFSPointers --generate-completion-script zsh`
-  	File.write("_LFSPointers", zshc)
-  	zsh_completion.install "_LFSPointers"
+    # Completion Scripts.
+    # ZSH.
+    zshc = `#{bin}/LFSPointers --generate-completion-script zsh`
+    File.write("_LFSPointers", zshc)
+    zsh_completion.install "_LFSPointers"
 
-  	# Bash.
-  	bashc = `#{bin}/LFSPointers --generate-completion-script bash`
-  	File.write("LFSPointers.bash", bashc)
-  	bash_completion.install "LFSPointers.bash"
+    # Bash.
+    bashc = `#{bin}/LFSPointers --generate-completion-script bash`
+    File.write("LFSPointers.bash", bashc)
+    bash_completion.install "LFSPointers.bash"
 
-  	# Fish.
-  	fishc = `#{bin}/LFSPointers --generate-completion-script fish`
-  	File.write("LFSPointers.fish", fishc)
-  	fish_completion.install "LFSPointers.fish"
+    # Fish.
+    fishc = `#{bin}/LFSPointers --generate-completion-script fish`
+    File.write("LFSPointers.fish", fishc)
+    fish_completion.install "LFSPointers.fish"
   end
 
   test do
-	  system "LFSPointers --help"
+    system "LFSPointers --help"
   end
 end
