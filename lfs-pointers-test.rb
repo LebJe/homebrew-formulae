@@ -7,7 +7,7 @@ class LfsPointersTest < Formula
   head "https://github.com/LebJe/LFSPointers.git"
 
   bottle do
-    root_url "https://github.com/LebJe/LFSPointers/releases/download/1.0.8/"
+    root_url "https://github.com/LebJe/LFSPointersTestHomebrewBottle/releases/download/1.0.8/"
     cellar :any_skip_relocation
     sha256 "da77699fe835a8e91c0c65702cced18802d731d8a8dee3d07c44d0ef21464afa" => :big_sur
   end
