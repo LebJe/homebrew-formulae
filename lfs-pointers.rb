@@ -7,10 +7,9 @@ class LfsPointers < Formula
   head "https://github.com/LebJe/LFSPointers.git"
 
   bottle do
-    root_url "https://github.com/LebJe/LFSPointers/releases/download/1.0.7"
+    root_url "https://github.com/LebJe/LFSPointers/releases/download/1.0.8"
     cellar :any_skip_relocation
-    rebuild 2
-    sha256 "fb4569c7c59fc3e82def38c6692e9a1946fe53194bfb15d102713802a1e9c4f4" => :big_sur
+    sha256 "2f55b1b0cd83e2b9c6f054eb1d3a938f3dd95e01ef12a718e873e9e088109d62" => :big_sur
   end
 
   def install
