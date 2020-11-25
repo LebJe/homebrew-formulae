@@ -4,7 +4,7 @@ class LfsPointers < Formula
   url "https://github.com/LebJe/LFSPointers.git",
     :tag => "1.0.8"
   license "MIT"
-  head "https://github.com/LebJe/LFSPointers.git"
+  head "https://github.com/LebJe/LFSPointers.git", :branch => "main"
 
   bottle do
     root_url "https://github.com/LebJe/LFSPointers/releases/download/1.0.8"
