@@ -1,4 +1,4 @@
-class LfsPointers < Formula
+class LfsPointersTest < Formula
   desc "Tool that allows you to convert a directory of large files to Git LFS pointers"
   homepage "https://github.com/LebJe/LFSPointers"
   url "https://github.com/LebJe/LFSPointers.git",
