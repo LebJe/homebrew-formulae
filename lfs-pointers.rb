@@ -15,7 +15,7 @@ class LfsPointers < Formula
   def install
     system "./build.sh"
 
-    system "ln -s .build/release/LFSPointers ."
+    system "mv .build/release/LFSPointers ."
 
     bin.install "LFSPointers"
 
