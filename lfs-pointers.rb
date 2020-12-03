@@ -2,14 +2,15 @@ class LfsPointers < Formula
   desc "Tool that allows you to convert a directory of large files to Git LFS pointers"
   homepage "https://github.com/LebJe/LFSPointers"
   url "https://github.com/LebJe/LFSPointers.git",
-    :tag => "1.0.8"
+    :tag => "2.0.0"
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git", :branch => "main"
 
   bottle do
-    root_url "https://github.com/LebJe/LFSPointers/releases/download/1.0.8"
+    root_url "https://github.com/LebJe/LFSPointers/releases/download/2.0.0"
     cellar :any_skip_relocation
-    sha256 "2f55b1b0cd83e2b9c6f054eb1d3a938f3dd95e01ef12a718e873e9e088109d62" => :big_sur
+    rebuild 1
+    sha256 "1f3ea734551c3a7e855899cc70914617939109c47f7865d561de8fa21a29ce6b" => :big_sur
   end
 
   def install
