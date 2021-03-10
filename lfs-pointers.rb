@@ -5,11 +5,12 @@ class LfsPointers < Formula
     :tag => "4.0.1"
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git", :branch => "main"
-
+  
   bottle do
-    root_url "https://github.com/LebJe/LFSPointers/releases/download/4.0.0"
-    cellar :any_skip_relocation
-    sha256 "41ddc77f2403d2c2949c4e2a81d64627ff4dc2de2cf389168a67011fbd18d3c7" => :big_sur
+    cellar: :any_skip_relocation
+    root_url "https://github.com/LebJe/LFSPointers/releases/download/4.0.1"
+    sha256 arm64_big_sur: "96970605d6a22a56fd70ff0eb2de4904cafdb9a487fc6713adc7564d11b6e68c"
+    sha256 big_sur: "faf50917ac841889db29d46352117fa5bc77f5860579aba1792132243f2f8968"
   end
 
   def install
