@@ -2,7 +2,7 @@ class LfsPointers < Formula
   desc "A command line tool that allows you to convert a directory of large files to Git LFS pointers"
   homepage "https://github.com/LebJe/LFSPointers"
   url "https://github.com/LebJe/LFSPointers.git",
-    :tag => "4.0.0"
+    :tag => "4.0.1"
   license "MIT"
   head "https://github.com/LebJe/LFSPointers.git", :branch => "main"
 
@@ -18,6 +18,8 @@ class LfsPointers < Formula
     system "mv .build/release/LFSPointers ."
 
     bin.install "LFSPointers"
+    
+    man1.install "lfs-pointers.1"
 
     # Completion Scripts.
     # ZSH.
